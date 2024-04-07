@@ -9,6 +9,10 @@
             margin-top: 50px;
             margin-bottom: 50px; 
         }
+button:hover {
+            background-color: #3e8e41;
+            color: white;
+        }
 </style>
 </head>
 <body>
