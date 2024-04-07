@@ -11,6 +11,12 @@
 </style>
 </head>
 <body>
+<button onclick="startGame()">Start Game</button>
+        <div class="bottom-buttons">
+            <button onclick="showInstructions()">Instructions</button>
+            <button onclick="showCredits()">Credits</button>
+        </div>
+    </div>
 ...........
 </script>
 ...............
