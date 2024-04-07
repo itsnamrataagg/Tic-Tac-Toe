@@ -90,6 +90,9 @@ h1 {
             <div class="cell" data-content="" onclick="makeMove(7)"></div>
             <div class="cell" data-content="" onclick="makeMove(8)"></div>
         </div>
+<button onclick="restartGame()">Restart Game</button>
+        <button id="backToMenuButton">Back to Menu</button>
+</div>
 
 
 <div id="win-page" class="container page hidden">
