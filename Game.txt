@@ -81,6 +81,16 @@ h1 {
 <div class="player-container">
             <label for="player2NameInput">Player 2 Name:</label>
             <input type="text" id="player2NameInput" placeholder="Enter Player 2 Name">
+
+    </div>
+
+<div id="win-page" class="container page hidden">
+        <h1 id="result">Result</h1>
+        <p class="winner" id="winnerName"></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+        
+
         </div>
 <button onclick="startGame()">Start Game</button>
         <div class="bottom-buttons">
@@ -88,6 +98,7 @@ h1 {
             <button onclick="showCredits()">Credits</button>
         </div>
     </div>
+
 </script>
 ...............
 </script>
