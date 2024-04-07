@@ -107,6 +107,13 @@ h1 {
         <button onclick="hideInstructions()">Back to Menu</button>
     </div>
 
+<div id="credits-page" class="container page hidden">
+        <h1>Credits</h1>
+        <p class="credits">Played by: <span id="player1NameSpan">Player 1</span> and <span id="player2NameSpan">Player 2</span></p>
+        <p class="winner" id="winnerName"></p>
+        <button onclick="hideCredits()">Back to Menu</button>
+    </div>
+
 </script>
 ...............
 </script>
