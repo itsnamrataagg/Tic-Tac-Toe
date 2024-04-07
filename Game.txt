@@ -27,6 +27,10 @@ body {
             margin-bottom: 50px; 
         }
 
+.container {
+            text-align: center;
+        }
+
 </style>
 </head>
 <body>
