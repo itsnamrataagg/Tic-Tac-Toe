@@ -99,7 +99,7 @@ h1 {
     </div>
         
 
-        </div>
+        
 
 
 <div id="instructions-page" class="container page hidden">
