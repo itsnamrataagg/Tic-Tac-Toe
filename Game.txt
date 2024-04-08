@@ -193,6 +193,45 @@ let currentPlayer = 'X';
             document.getElementById('player2NameSpan').textContent = player2Name;
             createGameBoard();
         }
+function restartGame() {
+            document.getElementById('win-page').classList.add('hidden');
+            document.getElementById('game-page').classList.remove('hidden');
+            cells.forEach(cell => {
+                cell.innerText = '';
+                cell.dataset.content = '';
+            });
+            winner = false;
+            currentPlayer = 'X';
+        }
+
+        function checkWinner() {
+            const winningConditions = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ];
+
+            for (let condition of winningConditions) {
+                let a = cells[condition[0]].innerText;
+                let b = cells[condition[1]].innerText;
+                let c = cells[condition[2]].innerText;
+                if (a !== '' && a === b && b === c) {
+                    winner = true;
+                    return a;
+                }
+            }
+
+            if ([...cells].every(cell => cell.innerText !== '')) {
+                return 'draw';
+            }
+
+            return null;
+        }
 </script>
 </body>
 </html>
