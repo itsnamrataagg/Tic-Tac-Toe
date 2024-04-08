@@ -258,7 +258,7 @@ function showInstructions() {
 
         function hideCredits() {
             document.getElementById('credits-page').classList.add('hidden');
-            document.getElementById('welcome-page').classList.remove('hidden')
+            document.getElementById('welcome-page').classList.remove('hidden');
         }
 
 function makeMove(index) {
