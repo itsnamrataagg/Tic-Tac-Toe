@@ -52,7 +52,7 @@ h1 {
             font-style: italic;
             font-weight: 700;
             font-size: 2em;
-            color: #333333;
+            color: grey;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 .player-container input[type="text"] {
