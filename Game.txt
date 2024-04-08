@@ -290,6 +290,27 @@ function makeMove(index) {
             }
 
         }
+function createGameBoard() {
+            const gameBoard = document.getElementById('game-board');
+            gameBoard.innerHTML = ''; 
+            cells = [];
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('cell');
+                    cell.dataset.row = i;
+                    cell.dataset.col = j;
+                    cell.addEventListener('click', function(event) {
+                        if (event.target.innerText === '' && !winner) {
+                            const index = parseInt(this.dataset.row) * 3 + parseInt(this.dataset.col);
+                            makeMove(index);
+                        }
+                    });
+                    gameBoard.appendChild(cell);
+                    cells.push(cell);
+                }
+            }
+        }
 function hideGame() {
             document.getElementById('game-page').classList.add('hidden');
             document.getElementById('welcome-page').classList.remove('hidden');
