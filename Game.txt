@@ -17,6 +17,11 @@
             height: 500
      }
 
+.bottom-buttons button {
+            margin-top: 10px; 
+            border-radius: 10px;
+        }
+
 body {
             font-family: Arial, sans-serif;
             margin: 0;
