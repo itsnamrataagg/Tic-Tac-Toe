@@ -79,6 +79,15 @@ button {
 .instruction {
             text-align: left;
         }
+
+.page:not(:first-child) {
+            margin-top: 20px;
+        }
+
+.credits {
+            text-align: center;
+        }
+
 </style>
 </head>
 <body>
