@@ -79,6 +79,11 @@ h1 {
             animation: fade-in 1s ease;
         }
 
+.bottom-buttons {
+            margin-top: 30px; 
+            
+        }
+
 .cell {
             width: 100px;
             height: 100px;
