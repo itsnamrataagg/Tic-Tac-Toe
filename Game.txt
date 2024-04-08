@@ -250,6 +250,26 @@ function restartGame() {
 
             return null;
         }
+
+function showInstructions() {
+            document.getElementById('welcome-page').classList.add('hidden');
+            document.getElementById('instructions-page').classList.remove('hidden');
+        }
+
+        function hideInstructions() {
+            document.getElementById('instructions-page').classList.add('hidden');
+            document.getElementById('welcome-page').classList.remove('hidden');
+        }
+
+        function showCredits() {
+            document.getElementById('welcome-page').classList.add('hidden');
+            document.getElementById('credits-page').classList.remove('hidden');
+        }
+
+        function hideCredits() {
+            document.getElementById('credits-page').classList.add('hidden');
+            document.getElementById('welcome-page').classList.remove('hidden');
+
 function makeMove(index) {
             if (cells[index].innerText === '' && !winner) {
                 cells[index].innerText = currentPlayer;
@@ -267,6 +287,7 @@ function makeMove(index) {
                     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
                 }
             }
+
         }
 function createGameBoard() {
             const gameBoard = document.getElementById('game-board');
