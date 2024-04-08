@@ -31,6 +31,14 @@ body {
             background-size: cover;
         }
 
+.cell:hover {
+            background-color: #f0f0f0;
+        }
+
+.cell::after {
+            content: attr(data-content);
+        }
+
 
 .player-container {
             margin-top: 50px;
@@ -62,6 +70,30 @@ h1 {
             font-size: 16px; 
             border-radius: 10px;
         }
+
+#game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            margin-top: 20px;
+            animation: fade-in 1s ease;
+        }
+
+.cell {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ddd;
+            font-size: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+
+
 button {
             padding: 10px 20px;
             font-size: 16px;
@@ -208,6 +240,7 @@ function restartGame() {
 
             return null;
         }
+
 function showInstructions() {
             document.getElementById('welcome-page').classList.add('hidden');
             document.getElementById('instructions-page').classList.remove('hidden');
@@ -226,6 +259,25 @@ function showInstructions() {
         function hideCredits() {
             document.getElementById('credits-page').classList.add('hidden');
             document.getElementById('welcome-page').classList.remove('hidden');
+
+function makeMove(index) {
+            if (cells[index].innerText === '' && !winner) {
+                cells[index].innerText = currentPlayer;
+                let result = checkWinner();
+                if (result === 'X' || result === 'O') {
+                    document.getElementById('winnerName').textContent = player1Name === result ? player1Name : player2Name;
+                    document.getElementById('result').textContent = "Winner";
+                    document.getElementById('win-page').classList.remove('hidden');
+                    document.getElementById('game-page').classList.add('hidden');
+                } else if (result === 'draw') {
+                    document.getElementById('result').textContent = "Draw";
+                    document.getElementById('win-page').classList.remove('hidden');
+                    document.getElementById('game-page').classList.add('hidden');
+                } else {
+                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                }
+            }
+
         }
 </script>
 </body>
