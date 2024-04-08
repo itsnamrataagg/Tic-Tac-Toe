@@ -79,11 +79,6 @@ h1 {
             animation: fade-in 1s ease;
         }
 
-.bottom-buttons {
-            margin-top: 30px; 
-            
-        }
-
 .cell {
             width: 100px;
             height: 100px;
@@ -190,7 +185,7 @@ button {
         <button onclick="hideCredits()">Back to Menu</button>
     </div>
 
-</script>
+<script>
 let currentPlayer = 'X';
         let player1Name = 'Player 1';
         let player2Name = 'Player 2';
@@ -283,27 +278,6 @@ function makeMove(index) {
                 }
             }
 
-        }
-function createGameBoard() {
-            const gameBoard = document.getElementById('game-board');
-            gameBoard.innerHTML = ''; 
-            cells = [];
-            for (let i = 0; i < 3; i++) {
-                for (let j = 0; j < 3; j++) {
-                    const cell = document.createElement('div');
-                    cell.classList.add('cell');
-                    cell.dataset.row = i;
-                    cell.dataset.col = j;
-                    cell.addEventListener('click', function(event) {
-                        if (event.target.innerText === '' && !winner) {
-                            const index = parseInt(this.dataset.row) * 3 + parseInt(this.dataset.col);
-                            makeMove(index);
-                        }
-                    });
-                    gameBoard.appendChild(cell);
-                    cells.push(cell);
-                }
-            }
         }
 </script>
 </body>
