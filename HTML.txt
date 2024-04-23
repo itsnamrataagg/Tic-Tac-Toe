@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+
+
+................................................
+
+
+
+
+
+
+
+    
+</head>
+<body>
+<div id="welcome-page" class="container page">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <div class="player-container">
+            <label for="player1NameInput">Player 1 Name:</label>
+            <input type="text" id="player1NameInput" placeholder="Enter Player 1 Name">
+        </div>
+<div class="player-container">
+            <label for="player2NameInput">Player 2 Name:</label>
+            <input type="text" id="player2NameInput" placeholder="Enter Player 2 Name">
+
+    </div>
+<button onclick="startGame()">Start Game</button>
+        <div class="bottom-buttons">
+            <button onclick="showInstructions()">Instructions</button>
+            <button onclick="showCredits()">Credits</button>
+        </div>
+    </div>
+
+
+<div id="game-page" class="container page hidden">
+        <h1>Tic Tac Toe</h1>
+        <div id="game-board">
+            <div class="cell" data-content="" onclick="makeMove(0)"></div>
+            <div class="cell" data-content="" onclick="makeMove(1)"></div>
+            <div class="cell" data-content="" onclick="makeMove(2)"></div>
+            <div class="cell" data-content="" onclick="makeMove(3)"></div>
+            <div class="cell" data-content="" onclick="makeMove(4)"></div>
+            <div class="cell" data-content="" onclick="makeMove(5)"></div>
+            <div class="cell" data-content="" onclick="makeMove(6)"></div>
+            <div class="cell" data-content="" onclick="makeMove(7)"></div>
+            <div class="cell" data-content="" onclick="makeMove(8)"></div>
+        </div>
+<button onclick="restartGame()">Restart Game</button>
+        <button id="backToMenuButton">Back to Menu</button>
+</div>
+
+
+<div id="win-page" class="container page hidden">
+        <h1 id="result">Result</h1>
+        <p class="winner" id="winnerName"></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+        
+
+        
+
+
+<div id="instructions-page" class="container page hidden">
+        <h1>Instructions</h1>
+        <p class="instruction">1. The game is played on a grid of 3x3 squares.</p>
+        <p class="instruction">2. Players take turns marking a square with their symbol ('X' or 'O').</p>
+        <p class="instruction">3. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.</p>
+        <button onclick="hideInstructions()">Back to Menu</button>
+    </div>
+
+<div id="credits-page" class="container page hidden">
+        <h1>Credits</h1>
+        <p class="credits">Played by: <span id="player1NameSpan">Player 1</span> and <span id="player2NameSpan">Player 2</span></p>
+        <p class="winner" id="winnerName"></p>
+        <button onclick="hideCredits()">Back to Menu</button>
+    </div>
+</body>
+</html>
+
+
