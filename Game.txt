@@ -179,9 +179,6 @@ button {
     </div>
         
 
-        
-
-
 <div id="instructions-page" class="container page hidden">
         <h1>Instructions</h1>
         <p class="instruction">1. The game is played on a grid of 3x3 squares.</p>
