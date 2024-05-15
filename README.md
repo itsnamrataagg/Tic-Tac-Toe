@@ -12,7 +12,7 @@ Credits page
 <br>
 Many more graphics and animations used three languages HTML, CSS, JAVASCRIPT
 <br>
-So here we begin this Let's continue!!!!!!!!
+So here we begin this Let's continue!!
 
 
 
