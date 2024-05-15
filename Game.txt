@@ -275,7 +275,8 @@ function makeMove(index) {
                 cells[index].innerText = currentPlayer;
                 let result = checkWinner();
                 if (result === 'X' || result === 'O') {
-                    document.getElementById('winnerName').textContent = player1Name === result ? player1Name : player2Name;
+                    document.getElementById('winnerName').textContent = currentPlayer === 'X' ? player1Name : player2Name;
+
                     document.getElementById('result').textContent = "Winner";
                     document.getElementById('win-page').classList.remove('hidden');
                     document.getElementById('game-page').classList.add('hidden');
