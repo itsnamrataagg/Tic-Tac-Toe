@@ -124,7 +124,7 @@ button {
         }
 
 .credits {
-            text-align: right;
+            text-align: center;
         }
 
 </style>
