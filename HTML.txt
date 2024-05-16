@@ -7,8 +7,7 @@
 
 
 
-................................................
-
+..........................................
 
 
 
@@ -69,7 +68,7 @@
         <h1>Instructions</h1>
         <p class="instruction">1. The game is played on a grid of 3x3 squares.</p>
         <p class="instruction">2. Players take turns marking a square with their symbol ('X' or 'O').</p>
-        <p class="instruction">3. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.</p>
+        <p class="instruction">3. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game</p>
         <button onclick="hideInstructions()">Back to Menu</button>
     </div>
 
