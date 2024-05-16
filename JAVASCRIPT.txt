@@ -109,7 +109,7 @@ function createGameBoard() {
                             makeMove(index);
                         }
                     });
-                    gameBoard.appendChild(cell);
+                    gameBoard.appendChild(child);
                     cells.push(cell);
                 }
             }
