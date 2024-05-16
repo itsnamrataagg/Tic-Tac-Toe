@@ -91,7 +91,7 @@ h1 {
             align-items: center;
             background-color: #fff;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ,transform 0.3s;
             
         }
 
