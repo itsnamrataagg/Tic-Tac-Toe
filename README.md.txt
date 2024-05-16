@@ -11,13 +11,13 @@
 </style>
 </head>
 <body>
-<div id="welcome-page" class="container page">
-        <h1>Welcome to Tic Tac Toe</h1>
-        <div class="player-container">
-            <label for="player1NameInput">Player 1 Name:</label>
-            <input type="text" id="player1NameInput" placeholder="Enter Player 1 Name">
+<button onclick="startGame()">Start Game</button>
+        <div class="bottom-buttons">
+            <button onclick="showInstructions()">Instructions</button>
+            <button onclick="showCredits()">Credits</button>
         </div>
-
+    </div>
+...........
 </script>
 ...............
 </script>
