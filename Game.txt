@@ -147,7 +147,6 @@ button {
             <input type="text" id="player1NameInput" placeholder="Enter Player 1 Name">
         </div>
 
-
 </script>
 ...............
 
