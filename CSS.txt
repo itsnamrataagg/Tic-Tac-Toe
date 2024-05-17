@@ -126,6 +126,6 @@ button {
 
 .credits {
             text-align: center;
-        }
+       }
 
 </style>
