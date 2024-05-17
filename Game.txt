@@ -6,6 +6,9 @@
     <title>Tic Tac Toe</title>
     <style>
 
+<<<<<<< HEAD
+...............
+=======
 
 .page {
             background-color: #fff;
@@ -91,7 +94,9 @@ h1 {
             align-items: center;
             background-color: #fff;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ,transform 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             
         }
 
@@ -131,6 +136,7 @@ button {
 .credits {
             text-align: center;
         }
+>>>>>>> b25dc70090a3a69be6237c38c2a55731f4d11dd3
 
 </style>
 </head>
@@ -141,10 +147,11 @@ button {
             <label for="player1NameInput">Player 1 Name:</label>
             <input type="text" id="player1NameInput" placeholder="Enter Player 1 Name">
         </div>
-<div class="player-container">
-            <label for="player2NameInput">Player 2 Name:</label>
-            <input type="text" id="player2NameInput" placeholder="Enter Player 2 Name">
 
+<<<<<<< HEAD
+</script>
+...............
+=======
     </div>
 <button onclick="startGame()">Start Game</button>
         <div class="bottom-buttons">
@@ -317,6 +324,7 @@ function hideGame() {
 
         
         document.getElementById('backToMenuButton').addEventListener('click', hideGame);
+>>>>>>> b25dc70090a3a69be6237c38c2a55731f4d11dd3
 </script>
 </body>
 </html>

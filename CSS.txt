@@ -48,6 +48,7 @@ button:hover {
 
 .container {
             text-align: center;
+            background-image: url('path/to/your/image.jpg')
 
         }
 
@@ -85,8 +86,9 @@ h1 {
             align-items: center;
             background-color: #fff;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            
+            transition: background-color 0.3s,transform 0.3s;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
 @keyframes fade-in {
